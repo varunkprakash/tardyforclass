@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>tardyforclass</title>
+</head>
+
+<body>
+	<img src="https://docs.google.com/drawings/d/1alwaYZUd5oydpUZmS2f12bBe6HUfzafduOonFySVmlg/pub?w=960&amp;h=720">
+	<h1>Just type in how many minutes you are late to class and a believable excuse will pop up</h1>
+
+	<h1>By: Varun Prakash
+	<script>
+	var excuse = prompt("Type in how many minutes you were late to class\nThe minimum number you can type in is 1\nThe maximum number you can type in is 10")
+
+	if (excuse === "1") {
+		var excuse_one = ["I dropped my binder and all my papers fell out","I had to turn in an assignment for the previous class","I had to talk to my teacher about my previous test","My locker got jammed","Some water fell on my homework so I had to get a new copy","I spilled some water on my phone so I had to wipe it"]
+		var array_one = excuse_one[Math.floor(Math.random()*excuse_one.length)];
+		confirm(array_one)
+
+	} if (excuse === "2") {
+		var excuse_two = ["My pencil sharpener fell and exploded on the floor so I had to clean it up","My pencil case ripped and all my stuff fell out","I left my binder in another class","All my papers fell out of my binder","Some water fell on my homework so I had to get a new copy"]
+		var array_two = excuse_two[Math.floor(Math.random()*excuse_two.length)];
+		confirm(array_two)
+
+
+	} if (excuse === "3") {
+		var excuse_three = ["I lost my wallet so I had to go find it"]
+		
+	} if (excuse === "4") {
+		confirm("Somebody stabbed my hand with a pen so I had to clean the ink of my hand")
+	} if (excuse === "5") {
+		confirm("I ran in to somebody and I bumped my head")
+	} if (excuse === "6") {
+		confirm("I was in the bathroom because my stomach started hurting")
+	} if (excuse === "7") {
+		confirm("I tripped and hurt my ankle so I was walking really slowly")
+	} if (excuse === "8") {
+		confirm("My water bottle leaked all over my shirt so I had to dry it")
+	} if (excuse === "9") {
+		confirm("I fell and hit my head")
+	} if (excuse === "10"){
+		confirm("I opened my lunch box upside down by mistake and all the food fell on the floor so I had to clean it")
+	}
+
+
+
+	</script>
+
+</body>
+</html>
